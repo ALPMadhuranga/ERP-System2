@@ -206,7 +206,7 @@ function App() {
     .use(LanguageDetector)
     .use(HttpApi)
     .init({
-      supportedLngs: ["en", "uz"],
+      supportedLngs: ["en", "lk"],
       fallbackLng: "en",
       detection: {
         order: ["cookie", "localStorage", "htmlTag", "path", "subdomain"],

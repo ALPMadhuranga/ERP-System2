@@ -71,7 +71,7 @@ const FacultyStudentLoginPags = ({ mode, setMode }) => {
   const [showAlert, setShowAlert] = useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [cookie] = useCookies(["i18next"]);
-  const codes = cookie.i18next === "en" ? "LK" : cookie.i18next;
+  const codes = cookie.i18next === "en" ? "US" : cookie.i18next;
   const [languageCode, setLanguageCode] = useState(
     codes && codes.toUpperCase()
   );
