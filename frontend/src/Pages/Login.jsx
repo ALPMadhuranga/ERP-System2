@@ -80,7 +80,7 @@ const Login = () => {
             <input
               onChange={(e) => setNewsRegNum(e.target.value)}
               type="text"
-              placeholder="Login"
+              placeholder={t("username")}
               value={newsRegNum}
               className={classnames("input", {
                 "is-invalid": errorsNewsHelper.registrationNumber,
