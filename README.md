@@ -43,4 +43,8 @@ GMAIL_PASSWORD=App password
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 Please make sure to update tests as appropriate.
 
+![1](https://github.com/ALPMadhuranga/University-Management-System/assets/71040816/e30a52f8-fe44-4e59-9032-8ad2a5c6a8d4)
+
+![2](https://github.com/ALPMadhuranga/University-Management-System/assets/71040816/69def590-4e45-41a5-a8c2-f673a2ac854f)
+
 
