@@ -3,7 +3,7 @@ import setAuthToken from "../utils/setAuthToken";
 import { SET_ADMIN, SET_ERRORS } from "../actionTypes";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-const url = "http://localhost:5000";
+const url = "https://university-management-system-backend-five.vercel.app";
 
 const setAdmin = (data) => {
 	return {

@@ -11,7 +11,7 @@ import {
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "../../api/axios";
-const url = "http://localhost:5000";
+const url = "https://university-management-system-backend-five.vercel.app";
 
 export const setChatHistory = (data) => {
 	return {

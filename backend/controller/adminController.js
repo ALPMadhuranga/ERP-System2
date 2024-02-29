@@ -560,7 +560,7 @@ module.exports = {
       // 				// data.append("from", "4546");
       // 				// data.append(
       // 				// 	"callback_url",
-      // 				// 	"http://localhost:5000/api/admin/findAllStudent"
+      // 				// 	"https://university-management-system-backend-five.vercel.app/api/admin/findAllStudent"
       // 				// );
       // 				// var config = {
       // 				// 	method: "post",
