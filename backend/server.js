@@ -48,18 +48,19 @@ app.use("/api/student", studentRoutes);
 app.use("/api/dekan", dekanRoutes);
 
 // serving the frontend
-// app.use(express.static(path.join(__dirname, "./dist")));
+app.use(express.static(path.join(__dirname, "./dist")));
 
-// app.get("*", function (_, res) {
-// 	res.sendFile(path.join(__dirname, "./dist/index.html"), function (err) {
-// 		res.status(500).send(err);
-// 	});
-// });
-app.use(express.static(path.join(__dirname, "../frontend/dist")));
-
-app.get("*", (req, res) => {
-  res.send(path.join(__dirname, "../", "frontend", "dist", "index.html"));
+app.get("*", function (_, res) {
+	res.sendFile(path.join(__dirname, "./dist/index.html"), function (err) {
+		res.status(500).send(err);
+	});
 });
+
+// app.use(express.static(path.join(__dirname, "../frontend/dist")));
+
+// app.get("*", (req, res) => {
+//   res.send(path.join(__dirname, "../", "frontend", "dist", "index.html"));
+// });
 
 
 //Catching 404 Error
