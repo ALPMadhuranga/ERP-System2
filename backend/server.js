@@ -67,7 +67,7 @@ app.use("/api/dekan", dekanRoutes);
 
 //Catching 404 Error
 app.use((req, res, next) => {
-	const error = new Error("INVALID ROUTE 	NOT WORKING");
+	const error = new Error("INVALID ROUTE NOT WORKING");
 	error.status = 404;
 	next(error);
 });
