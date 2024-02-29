@@ -13,14 +13,16 @@ const app = express();
 let server = http.createServer(app);
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+
 app.use(cors());
-// app.use(
-// 	cors({
-// 		origin: ["http://localhost:5173"],
-// 		methods: ["GET", "POST", "PUT", "DELETE"],
-// 		credentials: true,
-// 	})
-// );
+
+app.use(
+	cors({
+		origin: ["https://university-management-system-tawny.vercel.app"],
+		methods: ["GET", "POST", "PUT", "DELETE"],
+		credentials: true,
+	})
+);
 
 const adminRoutes = require("./routes/adminRoutes");
 const facultyRoutes = require("./routes/facultyRoutes");
