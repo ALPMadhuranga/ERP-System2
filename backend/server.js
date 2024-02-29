@@ -55,10 +55,10 @@ app.use("/api/dekan", dekanRoutes);
 // 		res.status(500).send(err);
 // 	});
 // });
-app.use(express.static(path.join(__dirname, "/frontend/build")));
+app.use(express.static(path.join(__dirname, "/frontend/dist")));
 
 app.get("*", (req, res) => {
-  res.send(path.join(__dirname, "frontend", "build", "index.html"));
+  res.send(path.join(__dirname, "frontend", "dist", "index.html"));
 });
 
 
