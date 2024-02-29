@@ -71,7 +71,7 @@ const FacultyStudentLoginPags = ({ mode, setMode }) => {
   const [showAlert, setShowAlert] = useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [cookie] = useCookies(["i18next"]);
-  const codes = cookie.i18next === "en" ? "US" : cookie.i18next;
+  const codes = cookie.i18next === "en" ? "LK" : cookie.i18next;
   const [languageCode, setLanguageCode] = useState(
     codes && codes.toUpperCase()
   );
@@ -109,7 +109,7 @@ const FacultyStudentLoginPags = ({ mode, setMode }) => {
 
   const language = [
     { code: "en", name: "English", country_code: "US" },
-    { code: "uz", name: "Uzbek", country_code: "UZ" },
+    { code: "lk", name: "Sinhala", country_code: "LK" },
   ];
   return (
     <Box color={"text.primary"} bgcolor="background.default">
@@ -148,7 +148,7 @@ const FacultyStudentLoginPags = ({ mode, setMode }) => {
               </Alert>
             )}
             <Box sx={{ flexGrow: 0, display: "flex", alignItems: "center" }}>
-              {/* <Button
+              <Button
                 id="basic-button"
                 aria-controls={open ? "basic-menu" : undefined}
                 aria-haspopup="true"
@@ -158,9 +158,9 @@ const FacultyStudentLoginPags = ({ mode, setMode }) => {
                 <Flag country={languageCode} />
                 &nbsp;
                 <span className="text-white">
-                  {languageCode === "US" ? "English" : "Uzbek"}
+                  {languageCode === "US" ? "English" : "Sinhala"}
                 </span>
-              </Button> */}
+              </Button>
               <Menu
                 id="basic-menu"
                 anchorEl={anchorEl}
@@ -170,7 +170,7 @@ const FacultyStudentLoginPags = ({ mode, setMode }) => {
                   "aria-labelledby": "basic-button",
                 }}
               >
-                {/* {language.map(({ name, country_code, code }) => (
+                {language.map(({ name, country_code, code }) => (
                   <li
                     key={country_code}
                     onClick={() => setLanguageCode(country_code)}
@@ -181,7 +181,7 @@ const FacultyStudentLoginPags = ({ mode, setMode }) => {
                       {name}
                     </MenuItem>
                   </li>
-                ))} */}
+                ))}
               </Menu>
               {/* <Link style={{ textDecoration: "none", color: "white" }} to="/">
                 Login
