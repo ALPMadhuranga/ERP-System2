@@ -148,19 +148,19 @@ const FacultyStudentLoginPags = ({ mode, setMode }) => {
               </Alert>
             )}
             <Box sx={{ flexGrow: 0, display: "flex", alignItems: "center" }}>
-              <Button
+              {/* <Button
                 id="basic-button"
                 aria-controls={open ? "basic-menu" : undefined}
                 aria-haspopup="true"
                 aria-expanded={open ? "true" : undefined}
                 onClick={handleClick}
               >
-                {/* <Flag country={languageCode} />
+                <Flag country={languageCode} />
                 &nbsp;
                 <span className="text-white">
                   {languageCode === "US" ? "English" : "Uzbek"}
-                </span> */}
-              </Button>
+                </span>
+              </Button> */}
               <Menu
                 id="basic-menu"
                 anchorEl={anchorEl}
@@ -170,7 +170,7 @@ const FacultyStudentLoginPags = ({ mode, setMode }) => {
                   "aria-labelledby": "basic-button",
                 }}
               >
-                {language.map(({ name, country_code, code }) => (
+                {/* {language.map(({ name, country_code, code }) => (
                   <li
                     key={country_code}
                     onClick={() => setLanguageCode(country_code)}
@@ -181,7 +181,7 @@ const FacultyStudentLoginPags = ({ mode, setMode }) => {
                       {name}
                     </MenuItem>
                   </li>
-                ))}
+                ))} */}
               </Menu>
               {/* <Link style={{ textDecoration: "none", color: "white" }} to="/">
                 Login
