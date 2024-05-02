@@ -1,4 +1,4 @@
-# University Enterprise resource planning system app
+# University Enterprise resource planning (ERP) system app
 
 ## Created using MERN Stack
 ### Used Technologies 
@@ -17,11 +17,10 @@
         * Jsonwebtoken (JWT)
         * Passport
 
-## Installation
-
+### Install dependencies
+- Clone the repository: 
 ```
-npm install
-cd frontend && npm install
+    https://github.com/ALPMadhuranga/University-Management-System.git
 ```
 
 ### Configure .env file
@@ -37,14 +36,25 @@ GMAIL_USERNAME=your email address
 GMAIL_PASSWORD=App password
 ```
 
+### Getting Started
+- First, run the development server:
+  -  cd to the backend directory:
+
+```bash
+   npm run server
+```
+
+- Second, run the client:
+    -  cd to the frontend directory:
+
+```bash
+   npm run start
+```
 
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 Please make sure to update tests as appropriate.
 
-![1](https://github.com/ALPMadhuranga/University-Management-System/assets/71040816/e30a52f8-fe44-4e59-9032-8ad2a5c6a8d4)
-
-![2](https://github.com/ALPMadhuranga/University-Management-System/assets/71040816/69def590-4e45-41a5-a8c2-f673a2ac854f)
-
-
+## Demo
+https://university-management-system-tawny.vercel.app/
